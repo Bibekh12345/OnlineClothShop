@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant"
+    android:orientation="vertical"
+    tools:context="com.onlineclothshop.Registration">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:id="@+id/img_logo"
+            android:background="@drawable/mrLogo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_logo"
+            android:layout_margin="25dp"
+            android:textColor="#f9aa34"
+            android:textSize="35sp"
+            android:text="Register Your Account"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/username_png"
+            android:drawablePadding="12dp"
+            android:ems="18"
+            android:layout_margin="10dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColorHint="#fff"
+            android:id="@+id/et_resUserName"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/user_png"
+            android:drawablePadding="12dp"
+            android:ems="18"
+            android:layout_margin="10dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColorHint="#fff"
+            android:id="@+id/et_resName"
+            android:layout_below="@+id/et_resUserName"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/address_png"
+            android:drawablePadding="12dp"
+            android:ems="18"
+            android:layout_margin="10dp"
+            android:hint="Your Address"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColorHint="#fff"
+            android:id="@+id/et_resAddress"
+            android:layout_below="@+id/et_resName"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/store_png"
+            android:drawablePadding="12dp"
+            android:ems="18"
+            android:layout_margin="10dp"
+            android:hint="Store Name"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColorHint="#fff"
+            android:id="@+id/et_resStoreName"
+            android:layout_below="@+id/et_resAddress"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/phone_png"
+            android:drawablePadding="12dp"
+            android:ems="18"
+            android:layout_margin="10dp"
+            android:hint="Phone Number"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColorHint="#fff"
+            android:id="@+id/et_resPhnNum"
+            android:layout_below="@+id/et_resStoreName"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/lock_png"
+            android:drawablePadding="12dp"
+            android:ems="18"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColorHint="#fff"
+            android:id="@+id/et_resPassword"
+            android:layout_below="@+id/et_resPhnNum"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#0d96a5"
+            android:clickable="true"
+            android:hint="Next"
+            android:padding="5dp"
+            android:shadowColor="#045b66"
+            android:textAllCaps="false"
+            android:textColorHint="@android:color/black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
